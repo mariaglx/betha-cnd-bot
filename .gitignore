@@ -1,0 +1,4 @@
+relatorio_sicas.pdf
+*.pdf
+__pycache__
+.env
