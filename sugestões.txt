@@ -1,0 +1,3 @@
+- Adicionar uma detecção de certidões com débitos em aberto
+- Melhorar tempo de geração 
+- Fazer com que seja um arquivo executável sem q seja necessário utilizar vs.code, pois ter que ficar importando o arquivo sempre com o mesmo nome fica chato...
