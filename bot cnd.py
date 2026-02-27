@@ -138,8 +138,22 @@ def executar_robo_cnd(lista_produtores, pasta_download):
                                             print(f"🔴 {p['nome']}: POSITIVA.")
                                 except: pass
 
-                                nome_seguro = p['nome'].replace(' ', '_')
-                                novo_nome = f"CND_{status_final}_{nome_seguro}_{p['cpf']}.pdf"
+                                # --- RENOMEAÇÃO LIMPA E ORGANIZADA ---
+                                # 1. Pega o nome do produtor
+                                nome_bruto = p['nome']
+                                
+                                # 2. Tenta cortar o endereço (ex: corta em 'LINHA' se existir)
+                                # Se o nome for "PEDRO MEIER LINHA SO JOO", ele pega só "PEDRO MEIER"
+                                if " LINHA " in nome_bruto:
+                                    nome_so_pessoa = nome_bruto.split(" LINHA ")[0]
+                                else:
+                                    nome_so_pessoa = nome_bruto
+                                
+                                # 3. Formata para o arquivo (substitui espaços por _)
+                                nome_final_arq = nome_so_pessoa.strip().replace(" ", "_")
+                                
+                                # 4. Define o nome final sem o CPF
+                                novo_nome = f"CND_{status_final}_{nome_final_arq}.pdf"
                                 caminho_novo = os.path.join(caminho_abs, novo_nome)
                                 
                                 # Tenta mover (remove duplicata se existir para não travar)
