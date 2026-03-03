@@ -1,6 +1,6 @@
 # 🤖 Bot de Auditoria e Emissão de CND - Betha Sistemas
 
-Esta é uma solução robusta de automação desenvolvida em **Python** para otimizar o processo de extração, emissão e análise de Certidões Negativas de Débitos (CND) no Portal do Cidadão da Betha Sistemas.
+Esta é uma solução robusta de automação desenvolvida em Python para otimizar o processo de extração, emissão e análise de Certidões Negativas de Débitos (CND) no Portal do Cidadão da Betha Sistemas. O projeto foca na redução do tempo de auditoria manual e na eliminação de falhas humanas na organização de arquivos.
 
 ## 🌟 Principais Funcionalidades
 
@@ -9,6 +9,12 @@ Esta é uma solução robusta de automação desenvolvida em **Python** para oti
 * **Extração com Regex**: Utilização de Expressões Regulares para isolar o nome dos produtores, removendo automaticamente endereços rurais e dados irrelevantes para a nomenclatura dos arquivos.
 * **Bypass de Interface**: Uso estratégico de `PyAutoGUI` para interagir com modais do sistema operacional e garantir o salvamento correto dos documentos.
 * **Gestão de Downloads**: Lógica de monitoramento de diretório com tratamento de exceções para evitar conflitos de escrita e leitura de arquivos pelo Windows.
+
+## 🧠 Integração com IA Generativa
+Este projeto utilizou IA Generativa (Gemini) como copiloto estratégico para:
+* **Otimização de Lógica**: Refinamento de algoritmos de busca e tratamento de exceções para aumentar a resiliência do bot.
+* **Engenharia de Regex**: Desenvolvimento de expressões regulares complexas para extração precisa de nomes e dados em documentos PDF variados.
+* **Qualidade de Código**: Revisão de boas práticas e estruturação de funções para garantir um código limpo e de fácil manutenção.
 
 ## 🛠️ Tecnologias Utilizadas
 
